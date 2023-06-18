@@ -1,0 +1,53 @@
+form {
+    width: 400px;
+
+}
+
+h3:hover {
+    background-color: black;
+    color: white;
+}
+
+textarea {
+    width: 100%;
+}
+
+textarea:focus {
+    background-color: pink;
+
+}
+
+#red:checked+label {
+    background-color: red;
+    color: white;
+}
+
+#blue:checked+label {
+    background-color: blue;
+    color: white;
+}
+
+#yellow:checked+label {
+    background-color: yellow;
+
+}
+
+button {
+    float: right;
+    padding: 5px 15px;
+    background-color: #f96666;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+}
+
+button:active {
+    float: right;
+    padding: 5px 15px;
+    background-color: #8a8a8a;
+    color: f96666;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+}
