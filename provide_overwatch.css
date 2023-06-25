@@ -8,10 +8,7 @@ body {
   background-attachment: fixed;
 }
 
-.container {
-
-  
-}
+.container {}
 
 .container .heroes {
   display: flex;
@@ -22,22 +19,47 @@ body {
   padding: 50px;
 }
 
-.container .heroes .hero {
+
+
+/* .container .heroes .hero {
   background-color: #c5c5c5;
   border: 4px solid #fff;
   margin: 8px;
-  /* padding: 5px; */
-  transform: skewX(-10deg);
+
   border-radius: 5px;
   overflow: hidden;
+  transform: scale(1.2) skew(-10deg);
   
   
 }
 
 .container .heroes .hero:hover {
   background-color: rgb(252, 162, 0);
+
+  transition: scale 1.2s;
+  z-index: 1;
+} */
+
+.container .heroes .hero {
+  background-color: #c5c5c5;
+  border: 4px solid #fff;
+  margin: 8px;
+
+  border-radius: 5px;
+  overflow: hidden;
+  transform: skew(-10deg);
+  transition: transform 1.2s;
+  /* 요거 마우스 오버전에 이미 작동하고있으면 머냐,,, 혼란,,,
+    변형되는건*/
+
+}
+
+.container .heroes .hero:hover {
+  background-color: rgb(252, 162, 0);
   transform: scale(1.2) skew(-10deg);
-  transition: 1.2s;
+  /* transition: transform 1.2s; */
+
+  
   z-index: 1;
 }
 
@@ -46,8 +68,9 @@ body {
   height: 100px;
   background-size: cover;
   transform: skewX(10deg);
-  
- 
+
+
+
 }
 
 /* 로고 - 수정하지 않아도 됩니다. */
